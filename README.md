@@ -1,10 +1,10 @@
-# kubernetes-cluster-for-geomapping
+# Kubernetes cluster for geomapping services
 A Kubernetes cluster diagram for geomapping service, as part of Helsinki Devops with Docker MOOC
 
 <img width="1961" height="1333" alt="KubernetesCluster drawio" src="https://github.com/user-attachments/assets/01b71053-20f7-4d2a-81d6-2fe5c31e172e" />
 
 
-## Component Breakdown -
+### Component Breakdown -
 localhost: Your own computer acting as the administrator. It uses kubectl to send deployment manifests to the cluster.
 Cluster: The logical boundary containing all four worker nodes and the control plane components.
 Pod: The smallest deployable unit. The diagram shows multiple Pods for both the GeoServer and the Mapping App distributed across different nodes for high availability.
