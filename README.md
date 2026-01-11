@@ -5,9 +5,9 @@ A Kubernetes cluster diagram for geomapping service, as part of Helsinki Devops 
 
 
 ### Component Breakdown -
-localhost: Your own computer acting as the administrator. It uses kubectl to send deployment manifests to the cluster.
-Cluster: The logical boundary containing all four worker nodes and the control plane components.
-Pod: The smallest deployable unit. The diagram shows multiple Pods for both the GeoServer and the Mapping App distributed across different nodes for high availability.
+localhost: Your own computer acting as the administrator. It uses kubectl to send deployment manifests to the cluster. \
+Cluster: The logical boundary containing all four worker nodes and the control plane components. \
+Pod: The smallest deployable unit. The diagram shows multiple Pods for both the GeoServer and the Mapping App distributed across different nodes for high availability. \
 Container: Located inside the Pods, these run the specific GeoServer and Mapping App software.
 Service:
 MappingApp-LB: Receives the incoming HTTP message from the internet and distributes it to the application Pods.
